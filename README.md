@@ -48,7 +48,16 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
  |  | √ | √ |  | √ | 91.23 | 96.72 | 91.19 | 95.10
  |  | √ | √ | √ | √ | 91.71 | 96.97 | 92.37 | 95.92
 
-
+### Table4 Impact of Hyperparameter Settings on Network Performance
+ | | ISIC2017 | |ISIC2018| |
+ ---- | ----- | ------ | ------ | ------ |
+ Hyperparameter | DSC(%) | ACC(%) | DSC(%) | ACC(%)
+ lr = 0.001 | 91.71 | 96.97 | 92.37 | 95.92
+ lr = 0.005 | 89.83 | 95.97 | 88.27 | 93.64
+ lr = 0.01 | 88.02 | 95.41 | 87.15 | 92.82
+ batch_size = 8 | 90.78 | 96.69 | 90.03 | 95.23
+ batch_size = 16 | 91.71 | 96.97 | 92.37 | 95.92
+ batch_size = 32 | 90.12 | 96.58 | 90.49 | 94.26
 
 
  
