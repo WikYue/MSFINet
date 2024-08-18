@@ -1,7 +1,7 @@
 # MSFINet
 The official implementation code of "MSFINet: Multi-scale Feature Interaction Fusion Network for Skin Lesion Image Segmentation". We will continue to improve the relevant content.
 ## Framework Overview
-![Framework Overview](https://github.com/WikYue/MSFINet/blob/main/figs/MSFINet.jpg)
+![Framework Overview](https://github.com/WikYue/MSFINet/blob/main/configs/MSFINet.jpg)
 
 ## Experimental results
 ### Table1 Comparison of the number of parameters and computation of the network
