@@ -4,7 +4,7 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
 ![Framework Overview](https://github.com/WikYue/MSFINet/tree/main/figs/MSFINet.jpg)
 
 ## Experimental results
-### Comparison of the number of parameters and computation of the network
+### Table1 Comparison of the number of parameters and computation of the network
  Model | Flops(G) | Params(M)
  ---- | ----- | ------  
  EGE-UNet  | 0.07 | 0.05 
@@ -20,14 +20,23 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
  DHUNet  | 101.07 | 69.34
  MSFINet(Ours)  | 11.79 | 47.29
 
-### Comparison of the number of parameters and computation of the network
+### Table2 Impact of different loss function settings on model performance
  | | ISIC2017 | |ISIC2018| |
- ---- | ----- | ------ | ------ | ------
- Hyperparameter | DSC(%) | ACC(%) | DSC(%) | ACC(%)
- ---- | ----- | ------
-L_bce | 90.81 | 96.73 | 90.39 | 94.22
-L_dice | 90.49 | 96.46 | 89.97 | 94.08
-L_bce+L_dice | 91.71 | 96.97 | 92.37 | 95.92
-λ_0,λ_1,λ_2=1,1,1 | 90.63 | 96.62 | 90.44 | 94.35
-λ_0,λ_1,λ_2=1,0.1,0.1 | 90.02 | 96.28 | 90.25 | 94.13
-λ_0,λ_1,λ_2=1,0.5,0.5 | 91.71 | 96.97 | 92.37 | 95.92
+ ---- | ----- | ------ | ------ | ------ |
+ Loss function | DSC(%) | ACC(%) | DSC(%) | ACC(%)
+ *L<sub>bce</sub>* | 90.81 | 96.73 | 90.39 | 94.22
+ *L<sub>dice</sub>* | 90.49 | 96.46 | 89.97 | 94.08
+ *L<sub>bce</sub> + L<sub>dice</sub>* | 91.71 | 96.97 | 92.37 | 95.92
+ *λ<sub>0</sub>, λ<sub>1</sub>, λ<sub>2</sub>* = 1, 1, 1 | 90.63 | 96.62 | 90.44 | 94.35
+ *λ<sub>0</sub>, λ<sub>1</sub>, λ<sub>2</sub>* = 1, 0.1, 0.1 | 90.02 | 96.28 | 90.25 | 94.13
+ *λ<sub>0</sub>, λ<sub>1</sub>, λ<sub>2</sub>* = 1, 0.5, 0.5 | 91.71 | 96.97 | 92.37 | 95.92
+
+### Table3 Ablation experiments with different modules
+ | | | | | | ISIC2017 | |ISIC2018| |
+ | ---- | ----- | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+ 
+
+
+
+
+ 
