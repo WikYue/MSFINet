@@ -5,7 +5,6 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
 
 ## Experimental results
 ### Comparison of the number of parameters and computation of the network
-<center>
  Model  | Flops(G)  | Params(M)
  ---- | ----- | ------  
  EGE-UNet  | 0.07 | 0.05 
@@ -20,10 +19,8 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
  FAT-Net  | 23.73 | 30.98
  DHUNet  | 101.07 | 69.34
  MSFINet(Ours)  | 11.79 | 47.29
-</center>
 
 ### Comparison of the number of parameters and computation of the network
-<center>
    | ISIC2017 | ISIC2018
    | DSC(%) | ACC(%) | DSC(%) | ACC(%)
  ---- | ----- | ------
@@ -39,4 +36,3 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
  FAT-Net  | 23.73 | 30.98
  DHUNet  | 101.07 | 69.34
  MSFINet(Ours)  | 11.79 | 47.29
-</center>
