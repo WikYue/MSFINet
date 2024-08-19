@@ -23,7 +23,7 @@ The official implementation code of "MSFINet: Multi-scale Feature Interaction Fu
 ### Table2 Impact of different loss function settings on model performance
  | | ISIC2017 | |ISIC2018| |
  ---- | ----- | ------ | ------ | ------ |
- Loss function | DSC(%) | ACC(%) | DSC(%) | ACC(%)
+ | | DSC(%) | ACC(%) | DSC(%) | ACC(%)
  *L<sub>bce</sub>* | 90.81 | 96.73 | 90.39 | 94.22
  *L<sub>dice</sub>* | 90.49 | 96.46 | 89.97 | 94.08
  *L<sub>bce</sub> + L<sub>dice</sub>* | 91.71 | 96.97 | 92.37 | 95.92
