@@ -117,22 +117,3 @@ class CRA(nn.Module):
         f_after_list[3] = f_after_list[3] + org_x4
 
         return f_after_list
-
-
-
-
-if __name__ == '__main__':
-
-    x1 = torch.rand(1, 64, 56, 56)
-    x2 = torch.rand(1, 128, 28, 28)
-    x3 = torch.rand(1, 320, 14, 14)
-    x4 = torch.rand(1, 512, 7, 7)
-
-    list = [x1,x2,x3,x4]
-
-
-    net = CCFA()
-    x = net(list)
-    #
-    for i in range(0,4):
-        print(x[i].size())
