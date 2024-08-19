@@ -530,27 +530,6 @@ class SBA(nn.Module):
         out = self.conv(concat)
         return out
 
-if __name__ == '__main__':
-
-    x1 = torch.rand(1,64,56,56)
-    x2 = torch.rand(1,128,28,28)
-    x3 = torch.rand(1,320,14,14)
-    x4 = torch.rand(1,512,7,7)
-
-    a = torch.rand(1, 64, 56, 56)
-    b = torch.rand(1, 32, 56, 56)
-
-
-
-    # a = get_CTranS_config()
-    # vis = False
-    # net = ChannelTransformer(a,vis, 56, channel_num=[64, 128, 320, 512])
-    #net = CCFT()
-    sba = SBA()
-    o = sba(a,b)
-    print(o.size())
-    #output = net(x1,x2,x3,x4)
-
 
 
 
